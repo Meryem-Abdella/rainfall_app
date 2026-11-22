@@ -42,7 +42,7 @@ def build_row(date, t2m, rh, ws, ps, rain7, rain30, rh7):
 
 st.title("Addis Ababa Rainfall Forecast")
 st.caption(
-    "Educational project: predicts TOMORROW's rainfall (mm) from today's weather and "
+    " Project: predicts TOMORROW's rainfall (mm) from today's weather and "
     "recent rainfall. Trained on NASA POWER daily data for Addis Ababa, 2015 to 2023."
 )
 
@@ -87,7 +87,7 @@ if st.button("Predict tomorrow's rainfall", type="primary"):
         st.error("Heavy rain possible.")
 
     st.caption(
-        "On the 2023 test data the typical error was about 3 mm per day. The model "
+        "On the 2023 test data the typical error was about 3 mm per day. "
         "tends to under-predict heavy storms: it rarely predicted more than about "
         "15 mm, even on days when real rainfall reached over 50 mm. Do not use this "
         "for real weather decisions."
